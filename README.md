@@ -7,7 +7,8 @@ This WordPress plugin adds comprehensive Schema.org markup to connect websites w
 ## What it does
 
 The plugin adds rich structured data to websites that tells search engines about:
-- Professional details (job title, employer, areas of expertise)
+- Professional details (job title, employer, work locations, areas of expertise)
+- Personal information (honorific prefix, professional image, languages)
 - Educational background (alumni institutions)  
 - Alternative name variations
 - Social media and professional profiles
@@ -29,11 +30,15 @@ This helps search engines understand connections between websites and other onli
 
 ### Basic Information
 - Choose entity type (Person or Organization)
+- Add honorific prefix (Dr., Prof., Mr., Ms., etc.)
 - Enter primary name and website URL
+- Upload professional image or logo using WordPress Media Library
 - Add alternative name variations
+- Specify languages known
 
 ### Professional Information  
 - Add job title and current employer
+- Specify multiple work locations (cities, regions, or "Remote")
 - List areas of expertise or specialization
 - Include educational institutions (alumni)
 
@@ -52,15 +57,19 @@ This helps search engines understand connections between websites and other onli
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Dr. Jane Smith",
+  "honorificPrefix": "Dr.",
+  "image": "https://example.com/wp-content/uploads/profile.jpg",
   "alternateName": ["Jane Smith", "J. Smith"],
   "url": "https://example.com",
   "jobTitle": "Head of Research",
+  "workLocation": ["Berlin", "Remote"],
   "worksFor": {
     "@type": "Organization",
     "name": "University of Example",
     "url": "https://university.example.com"
   },
   "knowsAbout": ["Data Science", "Machine Learning"],
+  "knowsLanguage": ["English", "German", "Spanish"],
   "alumniOf": ["MIT", "Stanford University"],
   "sameAs": [
     "https://linkedin.com/in/janesmith",
@@ -69,6 +78,20 @@ This helps search engines understand connections between websites and other onli
   ]
 }
 ```
+
+## New Features in Version 1.3.0
+
+### Enhanced Professional Profile Support
+- **Honorific Prefix**: Add titles like "Dr.", "Prof.", "Mr.", "Ms." for proper professional representation
+- **Professional Image**: Upload and manage profile images directly through WordPress Media Library
+- **Multiple Work Locations**: Support for multiple work locations including remote work scenarios
+- **Language Skills**: Document language proficiencies for international visibility
+
+### Improved User Experience
+- **WordPress Media Integration**: Native image upload functionality with media library support
+- **Dynamic Field Management**: Add/remove multiple entries for locations, languages, and other fields
+- **Enhanced Live Preview**: Real-time schema generation preview with all new fields
+- **Simplified Interface**: Cleaner, more intuitive admin interface with better field organization
 
 ## Profile URL Examples
 
@@ -86,6 +109,7 @@ The plugin works well with various professional and social platforms:
 - **PHP**: 7.4 or higher
 - **SEO Plugins**: Designed to complement Yoast SEO, RankMath, and other SEO plugins
 - **Themes**: Works with any properly coded WordPress theme
+- **Media Library**: Full integration with WordPress media management
 
 ## Technical Details
 
@@ -93,13 +117,27 @@ The plugin works well with various professional and social platforms:
 - Uses WordPress best practices for security and performance
 - Stores settings in WordPress options table
 - Includes proper uninstall cleanup
+- WordPress Media Library integration for image management
 - No external dependencies
+- Follows WordPress coding standards
 
 ## Contributing
 
 This plugin was created with AI assistance. Contributions, bug reports, and feature requests are welcome. Please open an issue or submit a pull request.
 
 ## Changelog
+
+### Version 1.3.0
+- **NEW**: Added honorific prefix support (Dr., Prof., etc.)
+- **NEW**: Professional image upload with WordPress Media Library integration
+- **NEW**: Multiple work locations support (including remote work)
+- **NEW**: Language skills documentation (knowsLanguage)
+- **IMPROVED**: Enhanced admin interface with better field organization
+- **IMPROVED**: Dynamic add/remove functionality for all multi-value fields
+- **IMPROVED**: Real-time schema preview with all new attributes
+- **IMPROVED**: Better error handling and user feedback
+- **FIXED**: Resolved plugin activation issues
+- **FIXED**: Cleaned up code structure and eliminated syntax errors
 
 ### Version 1.2.0
 - Added alternative names support
@@ -127,5 +165,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Schema.org sameAs](https://schema.org/sameAs)
 - [Schema.org Person](https://schema.org/Person)
 - [Schema.org Organization](https://schema.org/Organization)
+- [Schema.org honorificPrefix](https://schema.org/honorificPrefix)
+- [Schema.org knowsLanguage](https://schema.org/knowsLanguage)
+- [Schema.org workLocation](https://schema.org/workLocation)
+- [Schema.org image](https://schema.org/image)
 - [WordPress Plugin Development](https://developer.wordpress.org/plugins/)
 - [Google Structured Data Guidelines](https://developers.google.com/search/docs/appearance/structured-data)
+- [Google Rich Results Test](https://search.google.com/test/rich-results)
