@@ -28,24 +28,24 @@ This helps search engines understand connections between websites and other onli
 1. Navigate to **Settings → sameAs Schema** in your WordPress admin
 2. Configure the following sections:
 
-### Basic Information
-- Choose entity type (Person or Organization)
-- Add honorific prefix (Dr., Prof., Mr., Ms., etc.)
-- Enter primary name and website URL
-- Upload professional image or logo using WordPress Media Library
-- Add alternative name variations
-- Specify languages known
+   ### Basic Information
+   - Choose entity type (Person or Organization)
+   - Add honorific prefix (Dr., Prof., Mr., Ms., etc.)
+   - Enter primary name and website URL
+   - Upload professional image or logo using WordPress Media Library
+   - Add alternative name variations
+   - Specify languages known
 
-### Professional Information  
-- Add job title and current employer
-- Specify multiple work locations (cities, regions, or "Remote")
-- List areas of expertise or specialization
-- Include educational institutions (alumni)
+   ### Professional Information  
+   - Add job title and current employer
+   - Specify multiple work locations (cities, regions, or "Remote")
+   - List areas of expertise or specialization
+   - Include educational institutions (alumni)
 
-### Social Profiles & Professional Links
-- Add URLs to social media profiles
-- Include professional networks (LinkedIn, ResearchGate, etc.)
-- Add academic profiles (Google Scholar, ORCID, etc.)
+   ### Social Profiles & Professional Links
+   - Add URLs to social media profiles
+   - Include professional networks (LinkedIn, ResearchGate, etc.)
+   - Add academic profiles (Google Scholar, ORCID, etc.)
 
 3. Use the live preview to see generated Schema.org markup
 4. Save settings to activate the structured data output
@@ -128,16 +128,10 @@ This plugin was created with AI assistance. Contributions, bug reports, and feat
 ## Changelog
 
 ### Version 1.3.0
-- **NEW**: Added honorific prefix support (Dr., Prof., etc.)
-- **NEW**: Professional image upload with WordPress Media Library integration
-- **NEW**: Multiple work locations support (including remote work)
-- **NEW**: Language skills documentation (knowsLanguage)
-- **IMPROVED**: Enhanced admin interface with better field organization
-- **IMPROVED**: Dynamic add/remove functionality for all multi-value fields
-- **IMPROVED**: Real-time schema preview with all new attributes
-- **IMPROVED**: Better error handling and user feedback
-- **FIXED**: Resolved plugin activation issues
-- **FIXED**: Cleaned up code structure and eliminated syntax errors
+- Added honorific prefix support (Dr., Prof., etc.)
+- Professional image upload with WordPress Media Library integration
+- Multiple work locations support (including remote work)
+- Language skills documentation (knowsLanguage)
 
 ### Version 1.2.0
 - Added alternative names support
